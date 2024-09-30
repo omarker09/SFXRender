@@ -1,7 +1,4 @@
-﻿  SFXRender.cpp
-  Generating code
-  1 of 2747 functions (<0.1%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    112 functions had inline decision re-evaluated but remain unchanged
-  Finished generating code
-  SFXRender.vcxproj -> C:\Users\darkos256\Desktop\SFXRender\x64\Release\SFXRender.exe
+﻿  Game.cpp
+C:\Users\darkos256\Desktop\SFXRender\SFXRender\Game.cpp(48,79): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\darkos256\Desktop\SFXRender\SFXRender\Game.cpp(49,80): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+LINK : fatal error LNK1104: cannot open file 'C:\Users\darkos256\Desktop\SFXRender\x64\Release\SFXRender.exe'
