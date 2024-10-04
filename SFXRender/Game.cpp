@@ -1,6 +1,6 @@
 #include "Game.h"
 #include "RectShape.hpp"
-
+#include <box2d/box2d.h>
 #include "Game.h"
 #include "RectShape.hpp"
 
@@ -34,16 +34,15 @@ void Game::Game(SDL_Window* window, SDL_Renderer* renderer, SDL_Event event)
         std::cout << "Touch vertical side at y : " << yCord << " and x : " << xCord << std::endl;
     }
 
-    // Clear the renderer
-    SDL_SetRenderDrawColor(renderer, 0x00, 0x00, 0x00, 0xFF); // Black background
-    SDL_RenderClear(renderer);
+
 
     // Draw the rectangle at the updated position
     RectShape shape;
     shape.Shape(rectHeight, rectWidth, scale, renderer, xCord, yCord);
 
-    // Now render ImGui elements
-    ImGui::Begin("HH");
+    
+        // Now render ImGui elements
+    ImGui::Begin("Rect panel");
     ImGui::Text("Move the rect");
     ImGui::SliderFloat("slider x", &xCord, 0.0f, static_cast<int>(windowWidth - rectWidth));
     ImGui::SliderFloat("slider y", &yCord, 0.0f, static_cast<int>(windowHeight - rectHeight));
@@ -52,6 +51,7 @@ void Game::Game(SDL_Window* window, SDL_Renderer* renderer, SDL_Event event)
     // Render ImGui after SDL content
     ImGui::Render();
     ImGui_ImplSDLRenderer2_RenderDrawData(ImGui::GetDrawData(), renderer);
+    
 
     // Present the SDL renderer (which includes the game and ImGui now)
     SDL_RenderPresent(renderer);

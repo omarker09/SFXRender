@@ -1,10 +1,11 @@
-﻿  imgui_impl_sdl2.cpp
-  imgui_impl_sdlrenderer2.cpp
-  imgui.cpp
-  imgui_demo.cpp
-  imgui_draw.cpp
-  imgui_tables.cpp
-  imgui_widgets.cpp
+﻿  Game.cpp
+C:\Users\darkos256\Desktop\SFXRender\SFXRender\Game.cpp(48,79): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\darkos256\Desktop\SFXRender\SFXRender\Game.cpp(49,80): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Objects.cpp
+C:\Users\darkos256\Desktop\SFXRender\SFXRender\Objects.cpp(8,15): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\darkos256\Desktop\SFXRender\SFXRender\Objects.cpp(9,15): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\darkos256\Desktop\SFXRender\SFXRender\Objects.cpp(10,15): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\darkos256\Desktop\SFXRender\SFXRender\Objects.cpp(11,15): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
   SFXRender.cpp
   Generating Code...
   SFXRender.vcxproj -> C:\Users\darkos256\Desktop\SFXRender\x64\Debug\SFXRender.exe
